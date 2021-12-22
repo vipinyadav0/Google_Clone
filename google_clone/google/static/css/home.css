@@ -1,0 +1,28 @@
+body{
+    background-color: #edf2f4;
+}
+.header{
+    background-color: #d2d5d6;
+    text-align: right;
+    padding-right: 25px;
+    box-shadow: 0px 1px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+ul{
+    overflow: hidden;
+}
+
+li{
+    display: inline;
+    text-align: center;
+    padding-left: 1.5rem;
+}
+li:hover{
+    text-decoration: underline;
+    color: #3b2a2a;
+}
+.items{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+

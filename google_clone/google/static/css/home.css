@@ -1,28 +1,165 @@
-body{
-    background-color: #edf2f4;
-}
-.header{
-    background-color: #d2d5d6;
-    text-align: right;
-    padding-right: 25px;
-    box-shadow: 0px 1px 6px 6px rgba(0, 0, 0, 0.2);
+body {
+  background-color: #edf2f4;
 }
 
-ul{
-    overflow: hidden;
+/* Header Section */
+
+.header {
+  background-color: #d2d5d6;
+  text-align: right;
+  padding-right: 0px;
+  /* padding-top: -30px; */
+  box-shadow: 0px 1px 6px 6px rgba(0, 0, 0, 0.2);
+  position: sticky; top: 0;
 }
 
-li{
-    display: inline;
-    text-align: center;
-    padding-left: 1.5rem;
-}
-li:hover{
-    text-decoration: underline;
-    color: #3b2a2a;
-}
-.items{
-    padding-top: 5px;
-    padding-bottom: 5px;
+ul {
+  overflow: hidden;
 }
 
+li {
+  color: black;
+  text-decoration: none;
+  display: inline;
+  text-align: center;
+  padding-left: 1.5rem;
+}
+
+li:hover {
+  text-decoration: underline;
+  color: #3b2a2a;
+}
+.items {
+  /* display: inline; */
+  padding: 8px 15px;
+}
+
+/* Body Section */
+.body-section {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  /* box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.2); */
+}
+
+.item2 input{
+  border: none;
+}
+/* .try1 {
+  display: flex;
+  z-index: 3;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: inherit;
+  margin: 0 auto;
+  width: 638px;
+  width: auto;
+  max-width: 584px;
+}
+.try1:hover {
+  background-color: rgb(245, 243, 243);
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+.search-logo {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.try1 input {
+  border: none;
+  width: 570px;
+  height: 34px;
+  margin-top: 10px;
+  margin-left: 0px;
+} */
+/* .search-nav {
+  padding-top: 20px;
+} */
+
+/* Rough Work */
+/* .rough {
+  height: 44px;
+  margin-left: 23rem;
+  margin-right: 23rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+  background-color: #fffbfb;
+}
+
+.rough:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.try-items{
+    display: flex;
+}
+/* .item2 input{
+    width: 54px;
+    height: 40px;
+    margin-left: 6px;
+    border: none;
+} */ 
+
+button{
+  border: none;
+  border-radius: 3px;
+  background-color: #f8f6f6;
+  height: 30px;
+}
+
+
+/* Rough Work Css */
+
+.cl1 {
+  background-color: yellow;
+}
+.cl2 {
+  background-color: rgb(18, 119, 9);
+}
+.cl2 input {
+  width: 112%;
+}
+
+.cl3 {
+  background-color: rgb(0, 255, 98);
+  width: 25%;
+}
+.cl4 {
+  background-color: rgb(225, 0, 255);
+}
+
+.another {
+  /* background-color: bisque; */
+  display: flex;
+  border-radius: 20px;
+}
+
+.cll2 {
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.2);
+  background-color: #fffbfb;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+}
+
+.cll2:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.left, .right{
+    background-color: chocolate; 
+}
+
+.centre{
+    background-color: darkcyan;
+}
+input{
+    outline: none;
+}

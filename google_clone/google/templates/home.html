@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>    
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="/static/css/home.css" />
 
@@ -25,71 +25,95 @@
     <!-- This Contains Header -->
     <div class="header">
       <div>
-        <ul class='items row'>
-            <div>
-            <li >+You</li>
-            <li><a href="https://mail.google.com/mail/&ogbl" style="text-decoration: none; color: black;">Gmail</a></li>
+        <ul class="items">
+          <div>
+            <li>+You</li>
+            <li>
+              <a
+                href="https://mail.google.com/mail/&ogbl"
+                style="text-decoration: none; color: black"
+                >Gmail</a
+              >
+            </li>
             <li>Images</li>
-            <li><button type = 'button' class="btn btn-primary">Sign In</button></li>
-        </div>
+            <li>
+              <button type="button" class="btn btn-primary">Sign In</button>
+            </li>
+          </div>
         </ul>
       </div>
     </div>
-    <!-- This Comtains Body Section-->
-
+    <!-- This Contains Body Section-->
 
     <form action="" method="post">
-        <div class="second" style="margin-top: 2rem;">
-            <div class="roww">
-              <div class="col-12" style="text-align: center">
-                <img src="static/img/logo.png" alt="" />
-              </div>
+      <div class="second" style="margin-top: 2rem">
+        <div class="roww">
+          <div class="col-12" style="text-align: center">
+            <img src="static/img/logo.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="another"
+          style="
+            margin-top: 1.5rem;
+            padding: 14px;
+            margin-right: 6rem;
+            margin-left: 6rem;
+          "
+        >
+          <div class="cll1 col-3" style="height: 44px"></div>
+          <div class="cll2 col-6">
+            <div class="span col-1">
+              <img
+                src="static/img/search.png"
+                alt=""
+                style="height: 22px; position: relative"
+              />
             </div>
-            <div class="another" style="margin-top: 1.5rem; padding: 14px; margin-right: 6rem; margin-left: 6rem;">
-              <div class="cll1 col-3" style="height: 44px;"></div>
-              <div class="cll2 col-6">
-                <div class="span col-1"><img src="static/img/search.png" alt="" style="height: 22px; position: relative;"></div>
-                <div class="span col-10"
-                  ><input type="input" style="border: none; width: 100%; height:100%; display: block;"/></div>
-                <div class="span col-1"><img src="static/img/mic.png" alt="" style="width: 35px; padding-right: 15px; position: relative;"></div>
-              </div>
-              <div class="cll3 col-3"></div>
+            <div class="span col-10">
+              <input
+                type="input"
+                style="border: none; width: 100%; height: 100%; display: block"
+              />
             </div>
-            </div>
-        
-          <div class="col-12" style="display: flex; margin-top: 2rem;">
-            <div class="col-6" style="text-align: right; margin-right: 2rem;">
-              <button type="submit">Google Search</button>
-            </div>
-            <div class="col-6">
-              <button type="submit">I'm Feeling Lucky</button>
+            <div class="span col-1">
+              <img
+                src="static/img/mic.png"
+                alt=""
+                style="width: 35px; padding-right: 15px; position: relative"
+              />
             </div>
           </div>
+          <!-- <div class="cll3 col-3"></div> -->
+        </div>
+      </div>
+
+      <div class="col-12" style="display: flex; margin-top: 2rem">
+        <!-- <div class="col-3" style=""></div> -->
+        <div class="col-6" style="text-align: centre; display: flex">
+          <!-- <div class="col-3" ></div> -->
+          <div class="col-12" style="padding-left: 0px; text-align: right">
+            <button type="submit" style="margin-right: 15px">
+              Google Search
+            </button>
+          </div>
+          <div class="col-12" style="padding-right: 0px; text-align: left">
+            <button type="submit" style="margin-left: 15px">
+              I'm Feeling Lucky
+            </button>
+          </div>
+          <!-- <div class="col-3"></div> -->
+        </div>
+        <div class="col-3"></div>
+      </div>
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- <div class="body-section">
         <div class="row">
         <div class="image col col-sm">
             <a href=""><img src="static/img/google.png" alt="Image not found." style="width: inherit; margin-bottom: 1rem;"></a>
         </div> -->
-        <!-- <div class="search-box">
+    <!-- <div class="search-box">
             <div class="search-logo"></div>
             <div class="mic"></div>
         </div>
@@ -101,10 +125,10 @@
                 <button style="border-radius: .5rem;">I'm Feeling Lucky</button>
             </li>
         </div> -->
-    
+
     <!-- Trying That Original Google form -->
-        <!-- <div class="try1"> -->
-            <!-- <div class="all-items">
+    <!-- <div class="try1"> -->
+    <!-- <div class="all-items">
                 <div class="search-logo">
                 </div>
                 <div>
@@ -116,7 +140,7 @@
                 <div class="mic-logo"></div>
                 </div>
             </div> -->
-            <!-- <form action="search" method="POST">
+    <!-- <form action="search" method="POST">
                 {% csrf_token %}
             <div class="rough">
                 <div class="try-items">
@@ -157,12 +181,29 @@
  -->
 
     <!-- This contains Footer Section -->
-    <div class="footer"></div>
-
-
+    <footer class="footer">
+        <div class="footer_content">
+          <div class="upper" style="text-align: left;">
+          <h6>India</h6>
+          </div>
+          <div class="lower">
+            <div class="lef col-6" style="text-align: left;">
+              <a href="">About</a>
+              <a href="">Advertising</a>
+              <a href="">Business</a>
+              <a href="">How Search Works</a>
+            </div>
+            <div class="rig col-6" style="text-align: right;">
+              <a href="">Privacy</a>
+              <a href="">Terms</a>
+              <a href="">Settings</a>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <!-- Rought Work -->
-<!-- <div class="rough">
+    <!-- <div class="rough">
     <div class="try-items">
         <div class="item1">
             <div class="i1f">
@@ -183,7 +224,5 @@
         
     </div>
 </div> -->
-
-    
   </body>
 </html>

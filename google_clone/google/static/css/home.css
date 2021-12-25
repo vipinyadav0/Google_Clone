@@ -1,5 +1,7 @@
 body {
   background-color: #edf2f4;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* Header Section */
@@ -110,7 +112,7 @@ button{
   border: none;
   border-radius: 3px;
   background-color: #f8f6f6;
-  height: 30px;
+  height: 35px;
 }
 
 
@@ -162,4 +164,52 @@ button{
 }
 input{
     outline: none;
+}
+
+/* Footer Section CSS */
+.footer{
+  /* font-family: sans-serif; */
+  /* font-weight: 20px; */
+  position: fixed;
+  
+  /* padding: 10px 10px 0px 10px; */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* margin-top: 30px; */
+  /* height: 80px; */
+  /* background-color: burlywood; */
+}
+
+
+
+.footer .upper{
+  background-color: rgb(224, 221, 221);
+  text-align: left;
+  height: 50px;
+  width: 100%;
+  border-bottom: .1px solid rgb(206, 206, 206);
+}
+.footer .upper{
+  color: #70757a;
+  padding: 17px;
+}
+.footer .lower{
+  background-color: rgb(226, 226, 226);
+  height: 50px;
+  display: flex;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #70757a;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+  opacity: 1;
 }

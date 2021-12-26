@@ -30,19 +30,28 @@
     <div class="header">
       <div class="left">
         <div class="img">
-          <img
-            src="static/img/logo.png"
-            alt="Google"
-            style="width: 130px; padding-top: 35px; padding-left: 23px"
-          />
+          <a href="/"
+            ><img
+              src="static/img/logo.png"
+              alt="Google"
+              style="width: 130px; padding-top: 35px; padding-left: 23px"
+            />
+          </a>
         </div>
+        <form action="" method="POST">
+          {% csrf_token %}
         <div class="srch col">
-          <input type="input" />
+          {% if search %} {% for search in search %}
+          <input type="input" value="{{ search }}" name="search" />
+          {% endfor %} {% else %}
+          <input type="input" value="" name="search" />
+          {% endif %}
           <a class="material-icons" style="padding-top: 5px"> mic </a>
-          <a class="material-icons" style="align-self: start; color: #4067e9">
+          <a type="submit" class="material-icons" style="align-self: start; color: #4067e9">
             search
           </a>
         </div>
+      </form>
       </div>
 
       <div class="right">
@@ -65,9 +74,48 @@
         <a><span class="material-icons"> collections</span>Images</a>
         <a><span class="material-icons md-48"> more_vert</span>More</a>
         <span class="tol"><h6>Tools</h6></span>
-        
       </div>
     </div>
+    {% if final_result %}
+    <b style="padding-left: 190px; color: #646464; margin-bottom: 20px;"
+      >Web Results</b
+    >
+    {% for result in final_result %}
+    <div class="box">
+      <div class="res" style="width: 70%; padding-left: 140px">
+        <div style="padding-left: 50px; padding-right: 50px">
+          <h6 style="color: blue">
+            <a href="{{ result.1 }}">{{ result.0 }}</a>
+          </h6>
+          <h6 style="color: green">{{ result.1 }}</h6>
+          <h6 style="padding-right: 90px">{{ result.2 }}</h6>
+        </div>
+        <br /><br />
+      </div>
+      <div class="wiki"></div>
+    </div>
+    {% endfor %} {% endif %}
     <!-- <span class="material-icons-sharp"> settings </span> -->
+
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="upper" style="text-align: left">
+          <h6 style="padding-left: 174px">India</h6>
+        </div>
+        <div class="lower">
+          <div class="lef col-6" style="text-align: left; padding-left: 165px">
+            <a href="">Help</a>
+            <a href="">Send Feedback</a>
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+          </div>
+          <!-- <div class="rig col-6" style="text-align: right">
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Settings</a>
+          </div> -->
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
